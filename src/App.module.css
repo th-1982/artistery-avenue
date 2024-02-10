@@ -9,6 +9,7 @@
 }
 
 .Content {
+  color: #ffffff;
   background-color: #191717;
   padding: 10px;
   padding-top: 19px;
@@ -33,13 +34,14 @@
   }
   
   a {
-    color: #555555;
+    color: #c2c2c2;
     transition: color ease-in-out 0.3s;
   }
   
   a:hover {
     text-decoration: none;
     color: #FFCC00;
+    
   }
   
   a:hover i {

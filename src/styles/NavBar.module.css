@@ -16,3 +16,7 @@
 .Active i {
     color: #FFCC00;
 }
+
+.LoggedInUser {
+    color: #00ff00;
+}
