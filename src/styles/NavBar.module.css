@@ -3,6 +3,10 @@
     border: 1px solid #000;
 }
 
+.NavBar button {
+    background-color: #FFCC00;
+}
+
 .NavLink {
     padding: 5px;
     color: #fff;
