@@ -32,10 +32,14 @@ const ContactCreateForm = () => {
   };
 
   return (
-    <Row className={styles.Row}>
-      <Col className="my-auto p-0 p-md-2 d-flex align-items-center justify-content-center" md={12}>
-        <Container className={`${appStyles.Content} p-4 `}>
+    <Container className={`${appStyles.Content} p-4 mt-2`}>
+      <Row className="mb-3">
+        <Col>
           <h1 className={styles.Header}>Contact Us</h1>
+          </Col>
+          </Row>
+          <Row>
+          <Col>
           {successMessage && (
             <div className="alert alert-success" role="alert">
               {successMessage}
@@ -55,9 +59,9 @@ const ContactCreateForm = () => {
               <button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`} type="submit">Submit</button>
             </div>
           </Form>
-        </Container>
       </Col>
     </Row>
+    </Container>
   );
 };
 

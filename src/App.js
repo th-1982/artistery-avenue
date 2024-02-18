@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './App.module.css';
 import NavBar from './components/NavBar';
 import Container from "react-bootstrap/Container";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
+import {Switch } from "react-router-dom";
 import "./api/axiosDefaults";
 import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
@@ -15,7 +16,8 @@ import ProfilePage from "./pages/profiles/ProfilePage";
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
-import CommentCreateForm from "./pages/comments/CommentCreateForm";
+import ContactCreateForm from "./pages/contacts/ContactCreateForm";
+import ProfileDeleteForm from "./pages/profiles/ProfileDeleteForm";
 import NotFound from "./components/NotFound";
 
 
@@ -79,7 +81,12 @@ function App() {
         path="/profiles/:id/edit"
         render={() => <ProfileEditForm />}
       />
-      <Route exact path="/contact/:id" render={() => <CommentCreateForm />} />
+      <Route
+        exact
+        path="/profiles/:id/delete"
+        render={() => <ProfileDeleteForm  id={profile_id}/>}
+      />
+      <Route exact path="/contact/:id" render={() => <ContactCreateForm />} />
       <Route render={() => <NotFound />} />
       </Switch> 
      </Container>

@@ -70,6 +70,15 @@ export function ProfileEditDropdown({ id }) {
           <i className="fas fa-key" />
           change password
         </Dropdown.Item>
+        
+        {/*NOTE TO SELF: Bugged Component to Delete a User Password */}
+        <Dropdown.Item
+          onClick={() => history.push(`/profiles/${id}/delete`)}
+          aria-label="delete-profile"
+        >
+          <i className="fa-solid fa-user-xmark" />
+          Delete Account
+        </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
