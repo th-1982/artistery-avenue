@@ -15,6 +15,7 @@ import ProfilePage from "./pages/profiles/ProfilePage";
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
+import CommentCreateForm from "./pages/comments/CommentCreateForm";
 import NotFound from "./components/NotFound";
 
 
@@ -78,7 +79,7 @@ function App() {
         path="/profiles/:id/edit"
         render={() => <ProfileEditForm />}
       />
-
+      <Route exact path="/contact/:id" render={() => <CommentCreateForm />} />
       <Route render={() => <NotFound />} />
       </Switch> 
      </Container>
