@@ -57,7 +57,7 @@ const ContactCreateForm = () => {
               <input {...register('name', { required: true })} className={`${styles.Input} mb-3`} placeholder="Name" />
               <input {...register('subject', { required: true })} className={`${styles.Input} mb-3`} placeholder="Subject" />
               <textarea {...register('message', { required: true })} className={`${styles.Input} mb-3`} placeholder="Message" rows={6} cols={40} />
-              <button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`} type="submit">Submit</button>
+              <button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright} mt-2`} type="submit">Submit</button>
             </div>
           </Form>
       </Col>
