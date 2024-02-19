@@ -13,6 +13,7 @@ import btnStyles from "../../styles/Button.module.css";
 import Form from "react-bootstrap/Form";
 
 
+
 const ContactCreateForm = () => {
   const { register, handleSubmit, reset } = useForm();
   const [successMessage, setSuccessMessage] = useState('');
@@ -20,7 +21,7 @@ const ContactCreateForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post('https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/contact/', data);
+      await axios.post('https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/contacts/', data);
       setSuccessMessage('Thank you for the feedback! We are reading your message!');
       setErrorMessage('');
       reset();
@@ -55,7 +56,7 @@ const ContactCreateForm = () => {
               <input {...register('email', { required: true })} className={`${styles.Input} mb-3`} placeholder="Email" />
               <input {...register('name', { required: true })} className={`${styles.Input} mb-3`} placeholder="Name" />
               <input {...register('subject', { required: true })} className={`${styles.Input} mb-3`} placeholder="Subject" />
-              <textarea {...register('message', { required: true })} className={`${styles.Input} mb-3`} placeholder="Message" />
+              <textarea {...register('message', { required: true })} className={`${styles.Input} mb-3`} placeholder="Message" rows={6} cols={40} />
               <button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`} type="submit">Submit</button>
             </div>
           </Form>
