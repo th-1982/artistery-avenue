@@ -17,4 +17,5 @@
   .SearchIcon:hover {
     cursor: default;
     color: #FFCC00;
+    cursor: pointer;
   }

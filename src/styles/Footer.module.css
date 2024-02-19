@@ -1,0 +1,37 @@
+
+.container {
+    border: 1px solid #dadadf;
+    background-color: #191717;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px #0000001a;
+    color: white !important;
+}
+  
+.contactAndIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainer p:hover{
+    color: #FFCC00 !important;
+}
+
+
+.NavLink {
+    display: inline-block;
+    font-size: 15px;
+    padding:0 10px;
+    color: white !important;
+}
+  
+  
+.NavLink img {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+}
