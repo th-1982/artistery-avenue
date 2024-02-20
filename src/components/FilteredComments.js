@@ -33,7 +33,7 @@ const FilteredComments = ({ profileId }) => {
         return;
       }
       const response = await axios.get(
-        "https://djangorestframework-api-38c4a098777a.herokuapp.com/comments/",
+        "https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/comments/",
       );
       const filteredComments = response.data.results.filter(
         (comment) => comment.profile_id === profileId,
