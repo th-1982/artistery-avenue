@@ -30,14 +30,14 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
           onClick={handleEdit}
           aria-label="edit"
         >
-          <i className="fas fa-edit" />
+          <i className="fas-solid fa-pencile" />
         </Dropdown.Item>
         <Dropdown.Item
           className={styles.DropdownItem}
           onClick={handleDelete}
           aria-label="delete"
         >
-          <i className="fas fa-trash-alt" />
+          <i className="fa-solid fa-trash" />
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
@@ -54,21 +54,21 @@ export function ProfileEditDropdown({ id }) {
           onClick={() => history.push(`/profiles/${id}/edit`)}
           aria-label="edit-profile"
         >
-          <i className="fas fa-edit" /> edit profile
+          <i className="fas fa-edit" />{" "} Edit profile
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => history.push(`/profiles/${id}/edit/username`)}
           aria-label="edit-username"
         >
           <i className="far fa-id-card" />
-          change username
+          Change Username
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => history.push(`/profiles/${id}/edit/password`)}
           aria-label="edit-password"
         >
           <i className="fas fa-key" />
-          change password
+          Update Password
         </Dropdown.Item>
         
         {/*NOTE TO SELF: Bugged Component to Delete a User Password */}
@@ -76,8 +76,9 @@ export function ProfileEditDropdown({ id }) {
           onClick={() => history.push(`/profiles/${id}/delete`)}
           aria-label="delete-profile"
         >
-          <i className="fa-solid fa-user-xmark" />
-          Delete Account
+          <i className="fa-solid fa-user-xmark" />{" "}
+          <s>Delete Account</s>
+          <i className="fa-solid fa-mosquito-net fa-shake fa-sm"></i>
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

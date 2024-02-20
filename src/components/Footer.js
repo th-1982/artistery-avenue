@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <Container className={`${styles.container} p-4 mt-2`}>
-      <div className={`${styles.container} p-4 mt-2`}>
+        <div className={styles.contactContainer}>
         <div className={styles.contactAndIconsContainer}>
           <span>Contact us:</span>
           <div className={styles.iconContainer}>
@@ -28,7 +28,7 @@ const Footer = () => {
               to="/contact"
               aria-label="Contact"
             >
-              <i className="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>{" "}
             </NavLink>
             <a
               className={styles.NavLink}
