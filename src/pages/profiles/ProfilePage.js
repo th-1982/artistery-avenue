@@ -24,6 +24,8 @@ import Post from "../posts/Post";
 import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
+import FollowingProfiles from "../profiles/FollowingProfiles";
+import FollowedProfiles from "../profiles/FollowedProfiles";
 import Footer from '../../components/Footer';
 import FilteredComments from "../../components/FilteredComments";
 
@@ -64,13 +66,16 @@ function ProfilePage() {
 
   const mainProfile = (
     <>
-      {profile?.is_owner && <ProfileEditDropdown id={profile?.id} />}
+      {currentUser && currentUser.username === profile?.owner && (
+        <ProfileEditDropdown id={profile?.id} />
+      )}
       <Row noGutters className="px-3 text-center">
         <Col lg={3} className="text-lg-left">
         <Image
             className={styles.ProfileImage}
             roundedCircle
             src={profile?.image}
+            alt="Profile Image"
           />
         </Col>
         <Col lg={6}>
@@ -98,18 +103,24 @@ function ProfilePage() {
                 className={`${btnStyles.Button} ${btnStyles.BlackOutline}`}
                 onClick={() => handleUnfollow(profile)}
               >
-                unfollow
+                Unfollow
               </Button>
             ) : (
               <Button
                 className={`${btnStyles.Button} ${btnStyles.Black}`}
                 onClick={() => handleFollow(profile)}
               >
-                follow
+                Follow
               </Button>
             ))}
         </Col>
-        {profile?.content && <Col className="p-3">{profile.content}</Col>}
+        {profile?.content && (
+        <Col className="p-3"
+        style={{ border: "0.5px dashed #dadadf", marginTop: "20px" }}
+        >
+          {profile.content}
+        </Col>
+        )}
       </Row>
     </>
   );
@@ -154,6 +165,9 @@ function ProfilePage() {
         </Container>
       </Col>
       <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
+      <FollowingProfiles ownerId={profile?.id} />
+      <FollowedProfiles followedId={profile?.owner} />
+      {profile?.id && <FilteredComments profileId={profile.id} />}
         <PopularProfiles />
        
         <Footer />

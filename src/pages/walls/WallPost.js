@@ -20,8 +20,7 @@ const WallPost = (props) => {
   const handleSaveClick = async () => {
     try {
       const response = await axios.put(
-       // `https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/walls/${id}/`,
-       `https://djangorestframework-api-38c4a098777a.herokuapp.com/walls/${id}/`,
+        `https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/walls/${id}/`,
         {
           content: editedContent,
         }

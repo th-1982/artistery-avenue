@@ -23,10 +23,20 @@ function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
-
   const [query, setQuery] = useState("");
-
   const currentUser = useCurrentUser();
+
+  const id = "id";
+  const createWallPost = async (wallPostData) => {
+    try {
+      await axiosReq.post(
+        "https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/walls/",
+        wallPostData,
+      );
+    } catch (error) {
+      // Handle the error
+    }
+  };
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -58,7 +68,11 @@ function PostsPage({ message, filter = "" }) {
           className={styles.SearchBar}
           onSubmit={(event) => event.preventDefault()}
         >
+          <label htmlFor="searchInput" className={appStyles["visually-hidden"]}>
+            Search
+          </label> 
           <Form.Control
+            id="searchInput"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             type="text"
@@ -91,8 +105,19 @@ function PostsPage({ message, filter = "" }) {
           </Container>
         )}
       </Col>
-      <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
-      <PopularProfiles /> 
+      <Col className="d-block p-0 p-lg-2">
+      <div className="tablet-and-mobile-only">
+        <WallPostsList profileId={id} currentUser={currentUser} />
+        <WallPostCreateForm
+          profileId={id}
+          createWallPost={createWallPost}
+          currentUser={currentUser}
+        />
+      </div>
+      <div className="d-none d-lg-block">
+      <PopularProfiles />
+      </div>
+      <CommunityComments /> 
       <Footer />
       </Col>
     </Row>
