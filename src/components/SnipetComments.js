@@ -1,3 +1,5 @@
+import React from "react";
+import styles from "../styles/Comment.module.css";
 import Avatar from "./Avatar";
 import { Media } from "react-bootstrap";
 import { Link } from "react-router-dom";

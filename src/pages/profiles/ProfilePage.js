@@ -25,7 +25,7 @@ import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
 import Footer from '../../components/Footer';
-
+import FilteredComments from "../../components/FilteredComments";
 
 
 function ProfilePage() {
