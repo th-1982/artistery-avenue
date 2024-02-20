@@ -42,15 +42,6 @@ const Footer = () => {
             
             <a
               className={styles.NavLink}
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-             <i class="fa-brands fa-instagram"></i>{" "}
-            </a>
-            <a
-              className={styles.NavLink}
               href="https://twitter.com/home"
               target="_blank"
               rel="noopener noreferrer"
