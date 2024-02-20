@@ -1,0 +1,19 @@
+.TermsOfService-modal {
+    max-height: 80%;
+    max-width: 100%;
+    border: 1px solid #dadadf;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px #0000001a;
+    z-index: 9999;
+  
+    /* Scroll Bar */
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
