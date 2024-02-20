@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
 import styles from '../styles/Footer.module.css';
+import TermsOfService from "../components/TermsOfService";
 
 const Footer = () => {
+  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
+
+  const openTermsModal = () => {
+    setIsTermsModalOpen(true);
+  };
+
+  const closeTermsModal = () => {
+    setIsTermsModalOpen(false);
+  };
+
   return (
     <Container className={`${styles.container} p-4 mt-2`}>
       <div className={`${styles.container} p-4 mt-2`}>
@@ -26,7 +37,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <i className="fab fa-facebook"></i>
+              <i class="fa-brands fa-facebook"></i>
             </a>
             
             <a
@@ -36,24 +47,33 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <i className="fab fa-instagram"></i>
+             <i class="fa-brands fa-instagram"></i>{" "}
             </a>
             <a
               className={styles.NavLink}
               href="https://twitter.com/home"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter"
+              aria-label="X"
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fa-brands fa-x-twitter"></i>{" "}
             </a>
           </div>
         </div>
         <div className={styles.copyright}>
-          <span >© 2023 Copyright • Artistery Avenue •{" "}</span>
-          <span>Terms of Service</span>
+        <span>
+            © 2023 Copyright • Artistery Avenue •{" "}
+            <a
+              href="#"
+              onClick={openTermsModal}
+              aria-label="Open Terms of Service"
+            >
+              Terms of Service
+            </a>
+          </span> 
         </div>
       </div>
+      <TermsOfService isOpen={isTermsModalOpen} onRequestClose={closeTermsModal} />
     </Container>
   );
 };
