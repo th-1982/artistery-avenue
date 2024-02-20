@@ -1,38 +1,37 @@
 import React, { useEffect, useState } from "react";
+
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import Post from "./Post";
+
+import { useLocation } from "react-router-dom";
+import InfiniteScroll from "react-infinite-scroll-component";
+import Artist from "./Artist";
 import Asset from "../../components/Asset";
+
 import appStyles from "../../App.module.css";
 import styles from "../../styles/PostsPage.module.css";
-import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+
 import NoResults from "../../assets/no-results.png";
-import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
-import CommunityComments from "../../components/CommunityComments";
-import Footer from "../../components/Footer";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import WallPostsList from "../../pages/walls/WallPostsList";
-import WallPostCreateForm from "../../pages/walls/WallPostCreateForm";
 
-function PostsPage({ message, filter = "" }) {
-  const [posts, setPosts] = useState({ results: [] });
+const ArtistsPage = ({ message, filter = "" }) => {
+  const [artists, setArtists] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
+  const currentUser = useCurrentUser();
 
   const [query, setQuery] = useState("");
 
-  const currentUser = useCurrentUser();
-
   useEffect(() => {
-    const fetchPosts = async () => {
+    const fetchArtists = async () => {
       try {
-        const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
-        setPosts(data);
+        const { data } = await axiosReq.get(`/artists/?${filter}search=${query}`);
+        setArtists(data);
         setHasLoaded(true);
       } catch (err) {
         console.log(err);
@@ -41,7 +40,7 @@ function PostsPage({ message, filter = "" }) {
 
     setHasLoaded(false);
     const timer = setTimeout(() => {
-      fetchPosts();
+      fetchArtists();
     }, 1000);
 
     return () => {
@@ -50,9 +49,10 @@ function PostsPage({ message, filter = "" }) {
   }, [filter, query, pathname, currentUser]);
 
   return (
-    <Row className="h-100">
+    <Row className="h-100 d-flex justify-content-center">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-      <PopularProfiles mobile />
+        <p className="text-center">Most followed profiles.</p>
+        <PopularProfiles />
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
@@ -63,21 +63,22 @@ function PostsPage({ message, filter = "" }) {
             onChange={(event) => setQuery(event.target.value)}
             type="text"
             className="mr-sm-2"
-            placeholder="Search posts"
+            placeholder="Search artist by name, location or speciality"
           />
         </Form>
 
         {hasLoaded ? (
           <>
-            {posts.results.length ? (
+            <h1>Artists</h1>
+            {artists.results.length ? (
               <InfiniteScroll
-                children={posts.results.map((post) => (
-                  <Post key={post.id} {...post} setPosts={setPosts} />
+                children={artists.results.map((artist) => (
+                  <Artist key={artist.id} {...artist} showAll />
                 ))}
-                dataLength={posts.results.length}
+                dataLength={artists.results.length}
                 loader={<Asset spinner />}
-                hasMore={!!posts.next}
-                next={() => fetchMoreData(posts, setPosts)}
+                hasMore={!!artists.next}
+                next={() => fetchMoreData(artists, setArtists)}
               />
             ) : (
               <Container className={appStyles.Content}>
@@ -91,12 +92,8 @@ function PostsPage({ message, filter = "" }) {
           </Container>
         )}
       </Col>
-      <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
-      <PopularProfiles /> 
-      <Footer />
-      </Col>
     </Row>
   );
-}
+};
 
-export default PostsPage;
+export default ArtistsPage;

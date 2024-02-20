@@ -1,0 +1,10 @@
+.wallPostForm {
+    background: #191717;
+    border: 1px solid #dadadf;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 1px #0000001a;
+  }

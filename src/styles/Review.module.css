@@ -1,0 +1,24 @@
+.reviewContainer {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid #dadadf;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px #0000001a;
+}
+  
+.owner {
+    font-weight: bold;
+}
+  
+.date {
+    color: #696969;
+    font-size: 12px;
+}
+  
+.editButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

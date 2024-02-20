@@ -1,0 +1,6 @@
+.scrollableContainer {
+    max-height: 300px;
+    border-bottom: 1px solid #dadadf;
+    border-top: 1px solid #dadadf;
+    overflow-y: auto;
+  }

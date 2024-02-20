@@ -62,6 +62,13 @@ const NavBar = () => {
             <i className="fa-solid fa-list-check"></i>Feed
           </NavLink>
           <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/artists"
+      >
+        <i class="fa-solid fa-palette"></i>Artist
+      </NavLink>
+          <NavLink
             className={styles.NavLink}
             activeClassName={styles.Active}
             to="/liked"
