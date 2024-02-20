@@ -26,6 +26,8 @@ import NoResults from "../../assets/no-results.png";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
 import Footer from '../../components/Footer';
 
+
+
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
   const [profilePosts, setProfilePosts] = useState({ results: [] });
@@ -153,6 +155,7 @@ function ProfilePage() {
       </Col>
       <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
         <PopularProfiles />
+       
         <Footer />
       </Col>
     </Row>
