@@ -10,9 +10,6 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import btnStyles from "../../styles/Button.module.css";
 import styles from "../../styles/Post.module.css";
 
-
-
-
 // component renders artist information and statistics
 const Artist = (props) => {
   const {

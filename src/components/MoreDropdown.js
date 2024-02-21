@@ -44,7 +44,7 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
 };
 
 // Dropdown menu for the User Profile
-export function ProfileEditDropdown({ id }) {
+export function ProfileEditDropdown({ id, handleDeleteArtist  }) {
   const history = useHistory();
   return (
     <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">

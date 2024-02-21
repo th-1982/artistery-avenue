@@ -28,11 +28,15 @@ import FollowingProfiles from "../profiles/FollowingProfiles";
 import FollowedProfiles from "../profiles/FollowedProfiles";
 import Footer from '../../components/Footer';
 import FilteredComments from "../../components/FilteredComments";
+import Artist from "../artists/Artist";
+import axios from "axios";
+import { Modal } from "react-bootstrap";
 
 
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
   const [profilePosts, setProfilePosts] = useState({ results: [] });
+  const [artistData, setArtistData] = useState(null);
 
   const currentUser = useCurrentUser();
   const { id } = useParams();
@@ -42,9 +46,25 @@ function ProfilePage() {
 
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner;
+  const artistId = profile?.artistId;
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleDeleteArtist = async () => {
+    try {
+      await axios.delete(`/artists/${artistId}/`);
+      await axios.put(`/profiles/${id}/`, { artistId: null });
+      setArtistData(null);
+    } catch (err) {}
+    handleClose();
+  };
 
   useEffect(() => {
     const fetchData = async () => {
+    //  const handleMount = async () => {
       try {
         const [{ data: pageProfile }, { data: profilePosts }] =
           await Promise.all([
@@ -56,18 +76,27 @@ function ProfilePage() {
           pageProfile: { results: [pageProfile] },
         }));
         setProfilePosts(profilePosts);
+        try {
+          const { data } = await axiosReq.get(`/artists/${artistId}/`);
+          setArtistData(data);
+        } catch (err) {
+          setArtistData(null);
+        }
         setHasLoaded(true);
       } catch (err) {
+        setArtistData(null);
         console.log(err);
       }
     };
+    // handleMount();
+  //};
     fetchData();
-  }, [id, setProfileData]);
+  }, [id, setProfileData, artistId]);
 
   const mainProfile = (
     <>
       {currentUser && currentUser.username === profile?.owner && (
-        <ProfileEditDropdown id={profile?.id} />
+        <ProfileEditDropdown id={profile?.id}  handleDeleteArtist={handleDeleteArtist} />
       )}
       <Row noGutters className="px-3 text-center">
         <Col lg={3} className="text-lg-left">
@@ -157,6 +186,33 @@ function ProfilePage() {
           {hasLoaded ? (
             <>
               {mainProfile}
+              {profile?.artistId && is_owner && (
+                <Button className={`${btnStyles.Button} mb-2`} onClick={handleShow}>
+                  Remove as artist
+                </Button>
+              )}
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Confirm Delete</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  Are you sure you want to delete your artist profile?
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Cancel
+                  </Button>
+                  <Button
+                    className={btnStyles.Button}
+                    onClick={handleDeleteArtist}
+                  >
+                    Confirm
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+              {artistData && (
+                <Artist {...artistData} isProfilePage showAll />
+              )}
               {mainProfilePosts}
             </>
           ) : (
