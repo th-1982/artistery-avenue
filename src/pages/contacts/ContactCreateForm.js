@@ -60,12 +60,7 @@ const ContactCreateForm = () => {
                 )}
                 <Form onSubmit={handleSubmit(onSubmit)} className={styles.Form}>
                   <div className="d-flex flex-column">
-                    <label
-                      htmlFor="email"
-                      className={`${styles.Input} mb-3 ${appStyles["visually-hidden"]}`}
-                    >
-                      Email
-                    </label>
+                    
                     <input
                       {...register("email", { required: true })}
                       id="email"
@@ -73,12 +68,7 @@ const ContactCreateForm = () => {
                       placeholder="Email"
                     />
 
-                    <label
-                      htmlFor="name"
-                      className={`${styles.Input} mb-3 ${appStyles["visually-hidden"]}`}
-                    >
-                      Name
-                    </label>
+      
                     <input
                       {...register("name", { required: true })}
                       id="name"
@@ -86,12 +76,7 @@ const ContactCreateForm = () => {
                       placeholder="Name"
                     />
 
-                    <label
-                      htmlFor="subject"
-                      className={`${styles.Input} mb-3 ${appStyles["visually-hidden"]}`}
-                    >
-                      Subject
-                    </label>
+                   
                     <input
                       {...register("subject", { required: true })}
                       id="subject"
@@ -99,12 +84,6 @@ const ContactCreateForm = () => {
                       placeholder="Subject"
                     />
 
-                    <label
-                      htmlFor="message"
-                      className={`${styles.Input} mb-2 ${appStyles["visually-hidden"]}`}
-                    >
-                      Message
-                    </label>
                     <textarea
                       {...register("message", { required: true })}
                       id="message"

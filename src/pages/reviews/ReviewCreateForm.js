@@ -11,7 +11,7 @@ import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 
 import { axiosReq } from "../../api/axiosDefaults";
-import { useRedirect } from "../../hooks/useRedirect";
+import {useRedirect} from "../../hooks/useRedirect";
 
 const ReviewCreateForm = () => {
   useRedirect("loggedOut");
