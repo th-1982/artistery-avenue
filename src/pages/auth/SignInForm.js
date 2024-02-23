@@ -17,6 +17,7 @@ import appStyles from "../../App.module.css";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
 import { setTokenTimestamp } from "../../utils/utils";
+import Footer from "../../components/Footer";
 
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
@@ -31,6 +32,14 @@ function SignInForm() {
   const [errors, setErrors] = useState({});
 
   const history = useHistory();
+
+  const handleChange = (event) => {
+    setSignInData({
+      ...signInData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -40,22 +49,24 @@ function SignInForm() {
       setTokenTimestamp(data);
       history.goBack();
     } catch (err) {
+      if (
+        err.response &&
+        err.response.data &&
+        typeof err.response.data === "object"
+      ) {
       setErrors(err.response?.data);
+    } else {
+      setErrors({ non_field_errors: ["An unexpected error occurred."] });
     }
+  }
   };
 
-  const handleChange = (event) => {
-    setSignInData({
-      ...signInData,
-      [event.target.name]: event.target.value,
-    });
-  };
 
   return (
     <Row className={styles.Row}>
       <Col className="my-auto p-0 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
-          <h1 className={styles.Header}>sign in</h1>
+          <h1 className={styles.Header}>Sign In</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
               <Form.Label className="d-none">Username</Form.Label>
@@ -108,6 +119,7 @@ function SignInForm() {
             Don't have an account? <span>Sign up now!</span>
           </Link>
         </Container>
+        <Footer />
       </Col>
       <Col
         md={6}
@@ -116,6 +128,7 @@ function SignInForm() {
         <Image
           className={`${appStyles.FillerImage}`}
           src={"https://res.cloudinary.com/dz0hukrki/image/upload/v1708206861/art-painting2_xqltvs.jpg"}
+          alt="SignIn Image"
         />
       </Col>
     </Row>

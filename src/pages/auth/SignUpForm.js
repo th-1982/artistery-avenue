@@ -14,6 +14,7 @@ import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import axios from "axios";
 import { useRedirect } from "../../hooks/useRedirect";
+import Footer from "../../components/Footer";
 
 const SignUpForm = () => {
   useRedirect("loggedIn");
@@ -41,12 +42,23 @@ const SignUpForm = () => {
       await axios.post("/dj-rest-auth/registration/", signUpData);
       history.push("/signin");
     } catch (err) {
+      console.log(err);
       setErrors(err.response?.data);
     }
   };
 
   return (
     <Row className={styles.Row}>
+       <Col
+        md={6}
+        className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
+      >
+        <Image
+          className={`${appStyles.FillerImage}`}
+          src={"https://res.cloudinary.com/dz0hukrki/image/upload/v1708206969/arts-works7_grzffh.jpg"}
+          alt="SignUp Image"
+        />
+      </Col>
       <Col className="my-auto py-2 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className={styles.Header}>Sign Up</h1>
@@ -122,15 +134,7 @@ const SignUpForm = () => {
             Already have an account? <span>Sign in</span>
           </Link>
         </Container>
-      </Col>
-      <Col
-        md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
-      >
-        <Image
-          className={`${appStyles.FillerImage}`}
-          src={"https://res.cloudinary.com/dz0hukrki/image/upload/v1708206969/arts-works7_grzffh.jpg"}
-        />
+        <Footer />
       </Col>
     </Row>
   );
