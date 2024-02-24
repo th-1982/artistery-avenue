@@ -32,22 +32,22 @@ const Footer = () => {
             </NavLink>
             <a
               className={styles.NavLink}
-              href="https://facebook.com"
+              href="https://www.linkedin.com/in/theresa-wolff-4a3422265/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Facebook"
+              aria-label="Linkedin"
             >
-              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
             </a>
             
             <a
               className={styles.NavLink}
-              href="https://twitter.com/home"
+              href="https://github.com/th-1982/artistery-avenue"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="X"
+              aria-label="Github"
             >
-              <i className="fa-brands fa-x-twitter"></i>{" "}
+              <i className="fab fa-github"></i>{" "}
             </a>
           </div>
         </div>
