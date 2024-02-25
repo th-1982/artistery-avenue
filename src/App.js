@@ -61,6 +61,16 @@ function App() {
               />
             )}
           />
+           <Route
+            exact
+            path="/bookmarked"
+            render={() => (
+              <PostsPage
+                message="No results found. Adjust the search keyword or bookmark a post."
+                filter={`bookmarks__owner__profile=${profile_id}&ordering=-bookmarks__created_at&`}
+              />
+            )}
+          />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/profiles/:id" render={() => <ProfilePage />} />

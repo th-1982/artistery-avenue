@@ -20,7 +20,9 @@ const Post = (props) => {
     profile_image,
     comments_count,
     likes_count,
+    bookmarks_count,
     like_id,
+    bookmark_id,
     title,
     content,
     image,
@@ -78,6 +80,37 @@ const Post = (props) => {
     }
   };
 
+  const handleBookmark = async () => {
+    try {
+      const { data } = await axiosRes.post("/bookmarks/", { post: id });
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, bookmarks_count: post.bookmarks_count + 1, bookmark_id: data.id }
+            : post;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleUnbookmark = async () => {
+    try {
+      await axiosRes.delete(`/bookmarks/${bookmark_id}/`);
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, bookmarks_count: post.bookmarks_count - 1, bookmark_id: null }
+            : post;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <Card className={styles.Post}>
@@ -133,6 +166,31 @@ const Post = (props) => {
             <i className="far fa-comments" />
           </Link>
           {comments_count}
+
+          {is_owner ? (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>You can't bookmark your own post!</Tooltip>}
+            >
+              <i class="fa-solid fa-bookmark"></i>
+            </OverlayTrigger>
+          ) : bookmark_id ? (
+            <span onClick={handleUnbookmark}>
+              <i className={`fa-solid fa-bookmark ${styles.Heart}`} />
+            </span>
+          ) : currentUser ? (
+            <span onClick={handleBookmark}>
+              <i className={`fa-solid fa-bookmark ${styles.HeartOutline}`} />
+            </span>
+          ) : (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>Log in to bookmark posts!</Tooltip>}
+            >
+              <i className="fa-solid fa-bookmark" />
+            </OverlayTrigger>
+          )}
+          {likes_count}
         </div>
       </Card.Body>
     </Card>
