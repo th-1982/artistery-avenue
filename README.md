@@ -185,3 +185,30 @@ The static files are being hosted on Cloudinary:
 - Manually "Deploy Main Branch".
 - Upon successful deployment, retrieve the link for the mock terminal.
 - The live app can be found [here](https://th-1982-artistery-avenue-react-7bb24beffb04.herokuapp.com/).
+
+## Languages & Frameworks (Front-end)
+- HTML (markup language)
+- CSS (style sheet language)
+- Bootsrap (CSS framework)
+- React Boostrap (CSS framework on React components)
+- React (javaScript Library)
+
+## Languages & Frameworks (Back-end)
+- DjangoRESTFramework (python framework)
+
+## Other forms of development
+- [Google Fonts](https://fonts.google.com/) - Source of fonts
+- [FontAwesome](https://fontawesome.com/) - Source of icons
+- [Bytes.dev](https://bytes.dev/) - Testing screen sizes
+- Chrome DevTools - Testing tool
+- [WAVE Evaluation tool](https://wave.webaim.org/) - Testing tool
+- [W3jigsaw](https://jigsaw.w3.org/css-validator/) - CSS validation tool
+- [JSHint](https://jshint.com/) - Javascript testing tool
+- [Lucidchart](https://www.lucidchart.com/) - Diagramming and visualization tool 
+- [Github](https://github.com/) - Host for the repository
+- [Gitpod](https://gitpod.io/workspaces) - Code editor
+- [ElephantSQL](https://www.elephantsql.com/) - Database
+- [Cloudinary](https://cloudinary.com/) - Static & Media host
+- [TinyPNG](https://tinypng.com/) - Image compression tool
+- [Heroku](https://id.heroku.com/login) - Cloud platform/Host the live project
+
