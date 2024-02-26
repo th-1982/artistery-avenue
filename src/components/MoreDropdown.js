@@ -36,7 +36,7 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
           onClick={handleDelete}
           aria-label="delete"
         >
-          <i className="fa-solid fa-trash" /> {/* Deletes the Post & Comment */}
+          <i className="fa-solid fa-trash"  /> {/* Deletes the Post & Comment */}
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
@@ -54,7 +54,7 @@ export function ProfileEditDropdown({ id, handleDeleteArtist  }) {
           onClick={() => history.push(`/profiles/${id}/edit`)}
           aria-label="edit-profile"
         >
-          <i className="fas fa-edit" />{" "}
+          <i className="fas fa-edit"  />{" "}
           {/* Edits the Profile image & Description */}
           Edit Profile
         </Dropdown.Item>
@@ -62,14 +62,14 @@ export function ProfileEditDropdown({ id, handleDeleteArtist  }) {
           onClick={() => history.push(`/profiles/${id}/edit/username`)}
           aria-label="edit-username"
         >
-          <i className="far fa-id-card" /> {/* Edits the Username */}
+          <i className="far fa-id-card"  /> {/* Edits the Username */}
           Change Username
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => history.push(`/profiles/${id}/edit/password`)}
           aria-label="edit-password"
         >
-          <i className="fas fa-key" /> {/* Updates the User Password */}
+          <i className="fas fa-key"  /> {/* Updates the User Password */}
           Update Password
         </Dropdown.Item>
 
@@ -78,10 +78,10 @@ export function ProfileEditDropdown({ id, handleDeleteArtist  }) {
           onClick={() => history.push(`/profiles/${id}/delete`)}
           aria-label="delete-profile"
         >
-          <i className="fa-solid fa-user-xmark" />{" "}
+          <i className="fa-solid fa-user-xmark"  />{" "}
           {/* Deletes the User account (!) - Bugged - Del. Cookies + CTRL+R the page in order to successfully eliminate the User acc. (Will be dealth with when time allows)*/}
           <s>Delete Account</s>
-          <i className="fa-solid fa-mosquito-net fa-shake fa-sm"></i>
+          <i className="fa-solid fa-mosquito-net fa-shake fa-sm" ></i>
         </Dropdown.Item>
 
         <Dropdown.Item

@@ -57,10 +57,12 @@
   
   i {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 7px;
     vertical-align: middle;
   }
+  
+  
   
   i:hover {
     cursor: pointer;
@@ -85,4 +87,8 @@
   }
   *::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+
+  .newicons {
+    color: #191717 !important;
   }

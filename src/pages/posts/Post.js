@@ -174,7 +174,7 @@ const Post = (props) => {
             >
               <i class="fa-solid fa-bookmark"></i>
             </OverlayTrigger>
-          ) : bookmark_id ? (
+          ) : like_id ? (
             <span onClick={handleUnbookmark}>
               <i className={`fa-solid fa-bookmark ${styles.Heart}`} />
             </span>
@@ -190,7 +190,7 @@ const Post = (props) => {
               <i className="fa-solid fa-bookmark" />
             </OverlayTrigger>
           )}
-          {likes_count}
+          {bookmarks_count}
         </div>
       </Card.Body>
     </Card>
