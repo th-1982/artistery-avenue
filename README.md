@@ -136,3 +136,52 @@ Throughout the development process, tasks started from "Todo," progressing to "I
 ## Won't-Have (Bugged)
 - Delete Artist Profile (Artists):
 - Delete Profile bugged (bugged)
+
+
+## Development & Deployment
+- From the begining of development, the project started out and continued from the tutorial provided by Code Institute "Moments" unit on the "Advanced Front-end specialization" module.
+
+The project was developed using GitHub and GitPod platforms...
+- Navigate to: "Repositories" and create "New".
+- Mark the following fields: ✓ Public ✓ Add a README file.
+- Select template: "Code-Institute-Org/python-essentials-template".
+- Add a Repository name: "digital-nomads".
+- ...and create Repository.
+
+... and suffered various executions using the inbuild Terminal.
+
+For Commits on this project, the following commands ran:
+- ```git add .``` <- Stages before commiting.
+- ```git commit -m "written imperative declaration"``` <- Declares changes and updates.
+- ```git push``` <- Push all updates to the GitHub Repository.
+
+Through development the following commands ran:
+- ```npm install``` <- Installs Reacts dependencies
+- ```npm run start``` <- Runs the app in local environment
+
+Additionally, the following:
+- ```npm install react``` <- Installs React library. JavaScript library for building user interfaces.
+- ```npm install react-router-dom``` <- Installs React Rounter DOM. Library for handling navigation and routing in React applications.
+- ```npm install axios``` <- Installs Axios library. Library used for making HTTP requests.
+- ```npm install react-bootstrap``` <- Installs React Bootstrap. Library components that have been re-implemented using React.
+- ```npm install react-modal``` <- Installs Pop up Modal. Library for using modal dialogs and pop-up windows.
+- ```npm install react-simple-star-rating``` <- Installs Rating Star for reviews. Library for costumizing a star rating component in React.
+
+The database is being hosted on ElephantSQL:
+- Create an account(with GitHub) and select TinyTurtle plan.
+- From Details collect the URL and paste it on Heroku Config Var.
+
+The static files are being hosted on Cloudinary:
+- Create and account (with GitHub)
+- From the dashboard collect the API Environment variable and paste it on Heroku Config VAR.
+
+...and hosted on Heroku:
+- After creating an Heroku Free account, and applying for Student Pack
+- Navigate to: "Create new app" add a unique name "th-1982-artistery-avenue-react" and select "Europe" region. Click "Create App"
+- Head over to "Settings" tab and apply the respective config VARs
+- Move to "Deploy" section and select "Github" method"
+- From here search for the repository name "th-1892/artistery-avenue", from the GitHub account.
+- Hit "th-1892/artistery-avenue" and "Enable Automatic Deploys" to keep the the repository in parallel to Heroku.
+- Manually "Deploy Main Branch".
+- Upon successful deployment, retrieve the link for the mock terminal.
+- The live app can be found [here](https://th-1982-artistery-avenue-react-7bb24beffb04.herokuapp.com/).
