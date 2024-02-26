@@ -212,3 +212,33 @@ The static files are being hosted on Cloudinary:
 - [TinyPNG](https://tinypng.com/) - Image compression tool
 - [Heroku](https://id.heroku.com/login) - Cloud platform/Host the live project
 
+
+## Credits
+
+### Media 
+- The background image was taken from [pexels](https://www.pexels.com).
+- The website logo was taken from [free-artistery-avenue-logo](https://www.bing.com/search?pglt=41&q=free+artistery+avenue+logo+for+social+media+plateform&cvid=989244342f2c40288dd88319fc43288f&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTM0NDIxajBqMagCALACAA&FORM=ANNTA1&PC=EDGEDSP ). 
+
+
+### Code
+
+The following sources and references were resorted for the creation of this website:
+
+- The lessons and tutorials provided by Code Institute, on the final module entitled "Moments" for the 'Advanced Front-End' specialization
+- This README file and some of the Code were also taken and guided by the README file from [TiagoMA90](https://github.com/TiagoMA90/connect) and my mentor Gareth McGirr exemplar repo [body-doodles-api](https://github.com/Gareth-McGirr/body-doodles).
+- [React](https://legacy.reactjs.org/docs/getting-started.html) documentation
+- [React Bootstrap](https://react-bootstrap.netlify.app/) documetation
+
+### Acknowledgements
+
+I would like to thank:
+- My mentor Gareth McGirr for his help, feedback, advice, guidance and support.
+- The Tutor team provided by Code Institutes Student Support
+- Slack(#project-portfolio-5-advanced-frontend) as a solution platform for broken code and guidance on how to procceed to blockades
+- My Family, for their encouragement and support along the way.
+
+
+
+
+
+
