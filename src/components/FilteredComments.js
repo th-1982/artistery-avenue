@@ -17,7 +17,7 @@ const FilteredComments = ({ profileId }) => {
         return;
       }
       const response = await axios.get(
-        `https://djangorestframework-api-38c4a098777a.herokuapp.com/profiles/${profileId}/`,
+        `https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/profiles/${profileId}/`,
       );
       setProfile(response.data);
     } catch (error) {
