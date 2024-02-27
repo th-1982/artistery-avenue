@@ -172,9 +172,9 @@ const Post = (props) => {
               placement="top"
               overlay={<Tooltip>You can't bookmark your own post!</Tooltip>}
             >
-              <i class="fa-solid fa-bookmark"></i>
+              <i className="fa-solid fa-bookmark"></i>
             </OverlayTrigger>
-          ) : like_id ? (
+          ) : bookmark_id ? (
             <span onClick={handleUnbookmark}>
               <i className={`fa-solid fa-bookmark ${styles.Heart}`} />
             </span>
