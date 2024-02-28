@@ -32,7 +32,7 @@ const FollowedProfiles = ({ mobile, followedId }) => {
   const fetchProfileDetails = async (profileId) => {
     try {
       const response = await axios.get(
-        `https://djangorestframework-api-38c4a098777a.herokuapp.com/profiles/${profileId}/`,
+        `https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/profiles/${profileId}/`,
       );
       return response.data;
     } catch (error) {
@@ -45,7 +45,7 @@ const FollowedProfiles = ({ mobile, followedId }) => {
     const fetchData = async () => {
       try {
         const allProfiles = await fetchAllPages(
-          `https://djangorestframework-api-38c4a098777a.herokuapp.com/followers/`,
+          `https://th-1982-artistery-avenue-198c22334f81.herokuapp.com/followers/`,
         );
 
         const filteredProfiles = allProfiles.filter(
