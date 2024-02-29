@@ -30,6 +30,58 @@ In addition to standard CRUD operations, Users incorporate specialized functiona
 
 Rather than prioritizing aesthetics like structure and colors, the developer's efforts are geared towards creating more components and their functionality and arranging them accordingly.
 
+# Wireframes
+Full size wireframes available [here]()
+
+- Read a Post on /home /feed /Artist /liked /Bookmarks
+
+<img src="readme/wireframes/wireframe-post.jpg" alt="Read a Post">
+
+- Create & Update a Post
+
+<img src="readme/wireframes/wireframe-create-post.jpg" alt="Create a Post">
+
+- Update the Profile
+
+<img src="readme/wireframes/wireframe-update-profile.jpg" alt="Update Profile">
+
+- Creat a Contact
+
+<img src="readme/wireframes/wireframe-contact.jpg" alt="Create Contact">
+
+- Read a Profile
+
+<img src="readme/wireframes/wireframe-read-profile.jpg" alt="Read a Profile">
+
+- Sign Up
+
+<img src="readme/wireframes/wireframe-sign-up.jpg" alt="Sign Up">
+
+- Sign In
+
+<img src="readme/wireframes/wireframe-sign-in.jpg" alt="Sign In">
+
+- Update the Username
+
+<img src="readme/wireframes/wireframe-username.jpg" alt="Update username">
+
+- Update the Password
+
+<img src="readme/wireframes/wireframe-password.jpg" alt="Update Password">
+
+- Artist List 
+
+<img src="readme/wireframes/wireframe-artist-list.jpg" alt="Artist List">
+
+- Delete the Profile
+
+<img src="readme/wireframes/wireframe-delete-profile.jpg" alt="Delete Profile">
+
+- Create Artist and Update Artist
+
+<img src="readme/wireframes/wireframe-create-&-edit-artist.jpg" alt="Delete Profile">
+
+
 
 # Features & Functionality
 
