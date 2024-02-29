@@ -31,7 +31,7 @@ In addition to standard CRUD operations, Users incorporate specialized functiona
 Rather than prioritizing aesthetics like structure and colors, the developer's efforts are geared towards creating more components and their functionality and arranging them accordingly.
 
 # Wireframes
-Full size wireframes available [here]()
+Full size wireframes available [here](https://github.com/th-1982/artistery-avenue/tree/main/readme/wireframes)
 
 - Read a Post on /home /feed /Artist /liked /Bookmarks
 
