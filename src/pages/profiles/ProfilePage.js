@@ -226,8 +226,15 @@ function ProfilePage() {
       <FollowingProfiles ownerId={profile?.id} />
       <FollowedProfiles followedId={profile?.owner} />
       {profile?.id && <FilteredComments profileId={profile.id} />}
-        <PopularProfiles />
-       
+        <Footer />
+      </Col>
+      <Col className="d-block d-md-block d-lg-none p-0 p-md-2">
+        <FilteredComments profileId={profile?.id} />
+        {id && (
+          <>
+            
+          </>
+        )}
         <Footer />
       </Col>
     </Row>
