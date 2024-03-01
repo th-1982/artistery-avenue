@@ -81,6 +81,28 @@ Full size wireframes available [here](https://github.com/th-1982/artistery-avenu
 
 <img src="readme/wireframes/wireframe-create-&-edit-artist.jpg" alt="Delete Profile">
 
+## Colour-Scheme
+
+The Main Page Background is  An off-shade of white (#f8f8f8) that provides a clean and neutral backdrop for the platform's main content.
+The Component Backgrounds for Individual Components, such as Navbar, Footer, cards, or sections, feature an Eerie Black background (#191717), adding a touch of depth and contrast to the overall design. 
+Icons, Headings, Buttons, and Borders colors are Jonquil (#FFCC00), the primary color for icons, headings, buttons, and borders. This vibrant yellow hue adds a pop of color, ensuring essential elements stand out and creating a visually engaging interface.
+The Main Text White (#ffffff) is used for the main text, ensuring readability and a clean look against the off-white background.
+The Sign-In and Sign-Up Links are Atomic Tangerine (#ffAF8A), providing a distinct and eye-catching color for these critical actions.
+Combining Eerie Black, Jonquil,  White, and Atomic Tangerine creates a balanced and aesthetically pleasing color palette for the Artistery Avenue social media platform.
+
+<img src="readme/wireframes/colour-scheme-artistery.jpg" alt="Colour scheme">
+
+## Fonts
+
+The main font used on this website is "DM Sans, " a modern and versatile sans serif typeface. "DM Sans" contributes to a readable and cohesive user experience, ensuring that text elements are both aesthetically pleasing and easily accessible to users. This font choice reflects the platform's commitment to a modern and user-friendly design. 
+
+## Logo
+
+The website logo was taken and made using the [free Artistery Avenue logo website](https://www.bing.com/search?pglt=41&q=free+artistery+avenue+logo+for+social+media+plateform&cvid=989244342f2c40288dd88319fc43288f&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTM0NDIxajBqMagCALACAA&FORM=ANNTA1&PC=EDGEDSP )  to ensure seamless integration with the platform's overall design and color scheme. 
+
+# Components, Functionality & Reusability:
+This project includes several functional and reusable React components that are used for different parts of the application. Below are the key components:
+
 
 
 # Features & Functionality
@@ -268,7 +290,7 @@ The static files are being hosted on Cloudinary:
 ## Credits
 
 ### Media 
-- The background image was taken from [pexels](https://www.pexels.com).
+- The images on this website were taken from [pexels](https://www.pexels.com).
 - The website logo was taken from [free-artistery-avenue-logo](https://www.bing.com/search?pglt=41&q=free+artistery+avenue+logo+for+social+media+plateform&cvid=989244342f2c40288dd88319fc43288f&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTM0NDIxajBqMagCALACAA&FORM=ANNTA1&PC=EDGEDSP ). 
 
 
