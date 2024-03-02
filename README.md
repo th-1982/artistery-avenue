@@ -90,7 +90,7 @@ The Main Text White (#ffffff) is used for the main text, ensuring readability an
 The Sign-In and Sign-Up Links are Atomic Tangerine (#ffAF8A), providing a distinct and eye-catching color for these critical actions.
 Combining Eerie Black, Jonquil,  White, and Atomic Tangerine creates a balanced and aesthetically pleasing color palette for the Artistery Avenue social media platform.
 
-<img src="readme/wireframes/colour-scheme-artistery.jpg" alt="Colour scheme">
+<img src="readme/images/colour-scheme-artistery.jpg" alt="Colour scheme">
 
 ## Fonts
 
@@ -103,6 +103,53 @@ The website logo was taken and made using the [free Artistery Avenue logo websit
 # Components, Functionality & Reusability:
 This project includes several functional and reusable React components that are used for different parts of the application. Below are the key components:
 
+# Navbar, Header & Favicon
+The Navbar, situated at the top of the page, functions as a pivotal navigation menu crucial for guiding users seamlessly throughout the platform. It has been meticulously designed to optimize user experience and encourage engagement. The arrangement, from left to right, includes the 'Logo,' 'Add post' (available for logged-in users), 'Home,' 'Feed,' 'Artist,' 'Liked,' 'Bookmark,' 'Sign Out,' and 'Profile.' For users not logged in, the options are 'Home,' 'Sign in,' and 'Sign up.' Users can effortlessly navigate these components by clicking on the corresponding icons. A hover effect provides visual feedback, and the cursor transforms into a pointer, signaling the accessibility of each feature. Additionally, a Favicon has been implemented, contributing a branded and easily recognizable icon for the platform within browser tabs.
+
+Logged in users:
+
+<img src="readme/images/Navbar-logged-in-user.jpg" alt="Navigation Bar1">
+
+Logged out users:
+
+<img src="readme/images/Navbar-logged-out-user.jpg" alt="Navigation Bar2">
+
+# Posts
+Users on Artistery Avenue can create posts (when authenticated) by selecting "Add post" next to the logo. They upload an image and provide a title and brief content. Upon clicking Create/Submit, the post appears on the "/" or "Home" page for the community. Authors have control, being able to Edit or Delete posts via a dropdown menu with Pencil and Bin icons. Posts support engagement through likes/dislikes, comments, and bookmarking/unbookmarking, fostering an active community and user interaction.
+
+- ## Post.js
+- The component in the Artistery Avenue social media platform is a dynamic renderer for individual posts, displaying crucial details such as the owner's profile image, title, content, and associated functionalities.
+- Allows Users to seamlessly navigate the post details page by clicking on the post image or title, providing an intuitive and user-friendly experience.
+- The component handles essential actions based on user permissions, including like, unlike, edit, delete, bookmark, and unbookmark functionalities. These actions contribute to a dynamic and interactive user experience.
+- Users can quickly assess post-engagement metrics, such as the number of likes, comments, and bookmarks, facilitating community interaction and participation.
+
+- ## PostCreateForm.js
+- This component facilitates the creation of new posts by allowing users to input a title and content and upload an image.
+
+- ## PostEditForm.js
+- This component facilitates editing existing posts, allowing users to modify their post details, including title, content, and image upload.
+
+- ## PostPage.js
+- This component is utilized to display a single post along with its associated comments.
+- It fetches and presents detailed information about the post and enables authenticated users to create comments. 
+- The component also displays existing comments and supports infinite scrolling for enhanced user experience.
+
+- ## PostsPage.js
+- This component displays a list of posts featuring infinite scrolling for additional posts. 
+- Users can search for posts based on a provided query through a well-designed search bar.
+- Provides a layout that includes sections for popular profiles, search bar, and community comments, creating a dynamic and engaging user experience. Additionally, a dedicated wall section for wall posts allows users to create and view new wall posts.
+
+<img src="readme/images/PostPage.jpg" alt="Post page">
+
+# Likes
+Likes on Artistery Avenue allow authenticated users to express appreciation for posts by leaving likes and removing them (dislikes) as well. The like counter adjusts by +1 or -1 with each user interaction, ensuring it remains above 0. However, post owners are restricted from liking or disliking their own posts.
+
+<img src="readme/images/Likes.jpg" alt="Likes">
+
+# Bookmark
+Once authenticated, Users on Artistery Avenue can bookmark and unbookmark posts, showcasing their interest. The bookmark counter adjusts by +1 or -1 per user interaction, ensuring it remains above 0. Post owners are restricted from bookmarking or unbookmarking their posts.
+
+<img src="readme/images/Bookmark.jpg" alt="Bookmarks">
 
 
 # Features & Functionality
