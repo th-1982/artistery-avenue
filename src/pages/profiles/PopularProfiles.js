@@ -18,7 +18,7 @@ import Profile from "./Profile";
       {popularProfiles.results.length ? (
         <>
        
-          <p>Most followed profiles.</p>
+          <p><i className="fa-solid fa-users-viewfinder fa-lg"></i>Most followed profiles.</p>
           {mobile ? (
           
             <div className="d-flex justify-content-around">
@@ -41,3 +41,5 @@ import Profile from "./Profile";
 
 
 export default PopularProfiles;
+
+
