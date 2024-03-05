@@ -406,14 +406,13 @@ Respectively, the Filtered Comments & Community Comments components render in th
 
 - Due to the vast volume of components and possible distractions that may cause a user to be confused... to keep the space organized and clean, users can toggle on and off the content for its components visibility, when clicking its respective icon/title.
 
-
-
-
-
-
-
-
-
+<img src="readme/images/ProfileTooggleOff1.jpg" alt="Profile Tooggle1">
+<img src="readme/images/ProfileTooggleOff2.jpg" alt="Profile Tooggle2">
+<img src="readme/images/ProfileTooggleOff3.jpg" alt="Profile Tooggle3">
+<img src="readme/images/HomeToggleOff1.jpg" alt="Home Toggle1">
+<img src="readme/images/HomeToggleOff2.jpg" alt="Home Toggle2">
+<img src="readme/images/HomeToggleOff3.jpg" alt="Home Toggle3">
+<img src="readme/images/HomeToggleOff4.jpg" alt="Home Toggle4">
 
 
 # Features & Functionality
