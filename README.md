@@ -424,9 +424,8 @@ Respectively, the Filtered Comments & Community Comments components render in th
 - Visitors can navigate to the "/", "/signin", "/signup", "/profiles/(id)", and "/contact" pages.
 - Visitors can access external links on users' posts/comments and in the Footer.
 - Visitors can send messages to the admin panel via the contact form, from /contact/.
-- Visitors can view detailed profiles of registered artists, including portfolios and contact details.
-- Registered users can bookmark posts to save and revisit them later.
-- Registered users can view all the posts they have bookmarked.
+- Visitors can view  Artists.
+- Visitors can view bookmark post
 
 ## Registered Users (CRUD) can do the above as a Visistor, moreover:
 - Users can sign in/out through the "/sign in" and "/sign out" options on the NavBar.
@@ -443,9 +442,28 @@ Respectively, the Filtered Comments & Community Comments components render in th
 - Users can update their Wall posts via their posts on the Wall.
 - Users can create Reviews on each other's profiles (/profiles/(id)/).
 - Users can update their Reviews from their reviews associated with a profile via a profile page.
+- Registered Users can view detailed profiles of registered artists, contact details.
 - Registered users can bookmark posts to save and revisit them later.
 - Registered users can view all the posts they have bookmarked.
 - Registered users can remove a bookmark from a post.
+
+## Future Features
+- **Private Messaging System**: Implementation of a messaging system to allow users to message artists privately.
+
+- **Artist Gallery Area**: Inclusion of a gallery area for each artist to showcase their designs and finished works of art, grouped as journeys.
+
+- **Real-time Chat System**:
+Implement a real-time chat system to allow users to communicate instantly. Use technologies like WebSocket for efficient, low-latency communication.
+
+- **Privacy Controls**:
+Users can keep their bookmarked collections private or share them publicly, fostering community and collaboration.
+
+- **Backend Handling**:
+Develop backend logic to handle the storage and retrieval of downloadable files. This involves setting up a secure and scalable storage system.
+
+- **Download API Endpoints**:
+Create API endpoints that allow users to request and download artwork. Ensure these endpoints are secure, and consider implementing rate-limiting to prevent abuse.
+
 
 ## Planning & Agile
 
