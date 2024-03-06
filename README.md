@@ -539,6 +539,9 @@ Throughout the development process, tasks started from "Todo," progressing to "I
 - Delete Artist Profile (Artists):
 - Delete Profile bugged (bugged)
 
+## Testing
+- Testing can be found in the [TESTING.md](https://github.com/th-1982/artistery-avenue/blob/main/TESTING.md)
+
 
 ## Development & Deployment
 - From the begining of development, the project started out and continued from the tutorial provided by Code Institute "Moments" unit on the "Advanced Front-end specialization" module.
