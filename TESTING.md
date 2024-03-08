@@ -87,8 +87,9 @@ Manual testing has been performed by exploiting test case scenarios.
 
 
 ## Lighthouse
-The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css-validator/)<br>
-At the time of deployment the validation for *style.css* has the following outcome:<br><br>
+This website was scanned for Performance, Accessibility, Best Practices, and SEO for Desktop and Mobile devices under the Lighthouse function. It was tested with [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) provided by Chrome DevTools, and it scored favorably.
+Both devices exhibited scores above 90% for Performance, Accessibility, and SEO, except Performance (which went to the extreme on mobile devices) due to image size and extension for posts and profiles when uploaded by Users.
+Refer to the links for the templates: 
 
 **Lighthouse reports:**<br>
 
@@ -96,53 +97,70 @@ At the time of deployment the validation for *style.css* has the following outco
 <summary>Desktop</summary>
 
 * contact page<br>
-<img src="readme/testing/contact-desktop.jpg" alt="contact page" width="60%"><br><br>
+<img src="readme/testing/contact-desktop.jpg" alt="contact page"><br><br>
 
 * Sign in page<br>
-<img src="readme/testing/sign-in-desktop.jpg" alt="Sign in page" width="60%"><br><br>
+<img src="readme/testing/sign-in-desktop.jpg" alt="Sign in page" ><br><br>
 
 * Sign Up<br>
-<img src="readme/testing/sign-up-desktop.jpg" alt="Sign Up" width="60%"><br><br>
+<img src="readme/testing/sign-up-desktop.jpg" alt="Sign Up" ><br><br>
 
 * home page<br>
-<img src="readme/testing/home-desktop.jpg" alt="home page" width="60%"><br><br>
+<img src="readme/testing/home-desktop.jpg" alt="home page" ><br><br>
 
 * Artist page<br>
-<img src="readme/testing/artist-page-desktop.jpg" alt="Artist page" width="60%"><br><br>
+<img src="readme/testing/artist-page-desktop.jpg" alt="Artist page"><br><br>
 
 * Profile page<br>
-<img src="readme/testing/profile-page-desktop.jpg" alt="Profile page" width="60%"><br><br>
+<img src="readme/testing/profile-page-desktop.jpg" alt="Profile page" ><br><br>
 </details>
 
 * Edit profile page<br>
-<img src="readme/testing/edit-profile-desktop.jpg" alt="Edit profile page" width="60%"><br><br>
+<img src="readme/testing/edit-profile-desktop.jpg" alt="Edit profile page" ><br><br>
 </details>
-
 
 <details>
 <summary>Mobile</summary>  
 
 * Contact page<br>
-<img src="readme/testing/contact-mobile.jpg" alt="Contact page" width="60%"><br><br>
+<img src="readme/testing/contact-mobile.jpg" alt="Contact page" ><br><br>
 
 * Sign in page<br>
-<img src="readme/testing/sign-in-mobile.jpg" alt="Sign in page" width="60%"><br><br>
+<img src="readme/testing/sign-in-mobile.jpg" alt="Sign in page"><br><br>
 
 * home page<br>
-<img src="readme/testing/home-mobile.jpg" alt="home page" width="60%"><br><br>
+<img src="readme/testing/home-mobile.jpg" alt="home page" ><br><br>
 
 * Sign up page<br>
-<img src="readme/testing/sign-up-mobile.jpg" alt="Sign up page" width="60%"><br><br>
+<img src="readme/testing/sign-up-mobile.jpg" alt="Sign up page" ><br><br>
 
 * Artist page<br>
-<img src="readme/testing//artist-page-mobile.jpg" alt="Artist page" width="60%"><br><br>
+<img src="readme/testing//artist-page-mobile.jpg" alt="Artist page" ><br><br>
 </details><br>
 
 * Profile page<br>
-<img src="readme/testing/profile-page-mobile.jpg" alt="Profile page" width="60%"><br><br>
+<img src="readme/testing/profile-page-mobile.jpg" alt="Profile page" ><br><br>
 
 * Edit profile<br>
-<img src="readme/testing/edit-profile-mobile.jpg" alt="Profile page" width="60%"><br><br>
+<img src="readme/testing/edit-profile-mobile.jpg" alt="Profile page" ><br><br>
 </details>
 
 </details>
+
+## CSS
+The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css-validator/)<br> At the time of deployment the validation for site has the following outcome:<br><br>
+
+<img src="readme/testing/W3Jigsaw.jpg" alt="W3 Jigsaw">
+
+## Browser Compatabilty
+
+The website compatability was tested on the following browsers:
+- Google Chrome
+- Firefox
+- Microsoft Edge
+
+## Responsiveness
+
+All pages have undergone thorough testing to ensure they are responsive on various screen sizes, starting from 330px upwards.
+The design follows the WCAG 2.1 Reflow criteria for responsiveness, focusing on compatibility with Chrome, Edge, and Firefox browsers.
+
