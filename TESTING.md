@@ -87,3 +87,62 @@ Manual testing has been performed by exploiting test case scenarios.
 
 
 ## Lighthouse
+The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css-validator/)<br>
+At the time of deployment the validation for *style.css* has the following outcome:<br><br>
+
+**Lighthouse reports:**<br>
+
+<details>
+<summary>Desktop</summary>
+
+* contact page<br>
+<img src="readme/testing/contact-desktop.jpg" alt="contact page" width="60%"><br><br>
+
+* Sign in page<br>
+<img src="readme/testing/sign-in-desktop.jpg" alt="Sign in page" width="60%"><br><br>
+
+* Sign Up<br>
+<img src="readme/testing/sign-up-desktop.jpg" alt="Sign Up" width="60%"><br><br>
+
+* home page<br>
+<img src="readme/testing/home-desktop.jpg" alt="home page" width="60%"><br><br>
+
+* Artist page<br>
+<img src="readme/testing/artist-page-desktop.jpg" alt="Artist page" width="60%"><br><br>
+
+* Profile page<br>
+<img src="readme/testing/profile-page-desktop.jpg" alt="Profile page" width="60%"><br><br>
+</details>
+
+* Edit profile page<br>
+<img src="readme/testing/edit-profile-desktop.jpg" alt="Edit profile page" width="60%"><br><br>
+</details>
+
+
+<details>
+<summary>Mobile</summary>  
+
+* Contact page<br>
+<img src="readme/testing/contact-mobile.jpg" alt="Contact page" width="60%"><br><br>
+
+* Sign in page<br>
+<img src="readme/testing/sign-in-mobile.jpg" alt="Sign in page" width="60%"><br><br>
+
+* home page<br>
+<img src="readme/testing/home-mobile.jpg" alt="home page" width="60%"><br><br>
+
+* Sign up page<br>
+<img src="readme/testing/sign-up-mobile.jpg" alt="Sign up page" width="60%"><br><br>
+
+* Artist page<br>
+<img src="readme/testing//artist-page-mobile.jpg" alt="Artist page" width="60%"><br><br>
+</details><br>
+
+* Profile page<br>
+<img src="readme/testing/profile-page-mobile.jpg" alt="Profile page" width="60%"><br><br>
+
+* Edit profile<br>
+<img src="readme/testing/edit-profile-mobile.jpg" alt="Profile page" width="60%"><br><br>
+</details>
+
+</details>
