@@ -84,3 +84,6 @@ Manual testing has been performed by exploiting test case scenarios.
 | Update a post on the Community Wall | On the Wall component, update a wall post | Registered Users | - From the "/" or "Home" access the Community wall -> click on update icon "Pencil on a window" update the initial populated submission -> rewrite the form -> Click Submit | Updates a Wall post | A Wall post is created | Approved |
 | Create a Review on an Artist's profile page | On an Artist's Profile page create a Review | Registered Users | - From the inside of an Artist's Profile page -> click on "Leave a Review" to collapse the Review form -> Populate the Review form & set a Rating and Content -> Click Save | Creates a Review to an Artist's Profile | A Review to an Artist's profile is created | Approved |
 | Contact the Administration panel | Click on the Letter Icon | Reg. Non-Reg. Users | From the Footer click on the Letter icon -> Opens a Modal with a form to fill -> Populate the form -> Click on Submit | Submits a message to the Administration panel | A message to the Administration panel is sent | Approved  
+
+
+## Lighthouse
