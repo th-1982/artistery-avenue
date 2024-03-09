@@ -70,7 +70,7 @@ const WallPostsList = ({ profileId, currentUser, mobile }) => {
             </div>
           ) : (
             <p className={`${styles.centerText} text-center`}>
-              <i class="fa-solid fa-spinner fa-spin-pulse fa-xs"></i> Loading Wall Posts...
+              <i className="fa-solid fa-spinner fa-spin-pulse fa-xs"></i> Loading Wall Posts...
             </p>
           )}
         </div>

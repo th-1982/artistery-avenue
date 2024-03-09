@@ -9,6 +9,7 @@ import styles from "../../styles/Comment.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { axiosRes } from "../../api/axiosDefaults";
 
+// Comment Component
 const Comment = (props) => {
   const { profile_id, profile_image, owner, updated_at, content, id,  setPost,
     setComments, } = props;
@@ -36,6 +37,7 @@ const Comment = (props) => {
     } catch (err) {}
   };
 
+  // Comment Structure
   return (
     <>
       <hr />

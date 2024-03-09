@@ -33,51 +33,51 @@ Rather than prioritizing aesthetics like structure and colors, the developer's e
 # Wireframes
 Full size wireframes available [here](https://github.com/th-1982/artistery-avenue/tree/main/readme/wireframes)
 
-- Read a Post on /home /feed /Artist /liked /Bookmarks
+- **Read a Post on /home /feed /Artist /liked /Bookmarks**
 
 <img src="readme/wireframes/wireframe-post.jpg" alt="Read a Post">
 
-- Create & Update a Post
+- **Create & Update a Post**
 
 <img src="readme/wireframes/wireframe-create-post.jpg" alt="Create a Post">
 
-- Update the Profile
+- **Update the Profile**
 
 <img src="readme/wireframes/wireframe-update-profile.jpg" alt="Update Profile">
 
-- Creat a Contact
+- **Creat a Contact**
 
 <img src="readme/wireframes/wireframe-contact.jpg" alt="Create Contact">
 
-- Read a Profile
+- **Read a Profile**
 
 <img src="readme/wireframes/wireframe-read-profile.jpg" alt="Read a Profile">
 
-- Sign Up
+- **Sign Up**
 
 <img src="readme/wireframes/wireframe-sign-up.jpg" alt="Sign Up">
 
-- Sign In
+- **Sign In**
 
 <img src="readme/wireframes/wireframe-sign-in.jpg" alt="Sign In">
 
-- Update the Username
+- **Update the Username**
 
 <img src="readme/wireframes/wireframe-username.jpg" alt="Update username">
 
-- Update the Password
+- **Update the Password**
 
 <img src="readme/wireframes/wireframe-password.jpg" alt="Update Password">
 
-- Artist List 
+- **Artist List** 
 
 <img src="readme/wireframes/wireframe-artist-list.jpg" alt="Artist List">
 
-- Delete the Profile
+- **Delete the Profile**
 
 <img src="readme/wireframes/wireframe-delete-profile.jpg" alt="Delete Profile">
 
-- Create Artist and Update Artist
+- **Create Artist and Update Artist**
 
 <img src="readme/wireframes/wireframe-create-&-edit-artist.jpg" alt="Delete Profile">
 

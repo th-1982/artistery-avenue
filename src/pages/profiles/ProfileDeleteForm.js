@@ -9,6 +9,7 @@ import appStyles from "../../App.module.css";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { removeTokenTimestamp } from "../../utils/utils";
 import buttonStyles from "../../styles/Button.module.css"
+import PropTypes from 'prop-types';
 
 const ProfileDeleteForm = ({ id }) => {
   const setCurrentUser = useSetCurrentUser();
@@ -44,6 +45,11 @@ const ProfileDeleteForm = ({ id }) => {
       </Row>
     </Container>
   );
+};
+
+// Add PropTypes validation
+ProfileDeleteForm.propTypes = {
+  id: PropTypes.string.isRequired,
 };
 
 export default ProfileDeleteForm;

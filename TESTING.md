@@ -111,7 +111,7 @@ Refer to the links for the templates:
 - **Artists page**
 <img src="readme/testing/artist-page-desktop.jpg" alt="Artist page">
 
-- **Profile page**
+- **Read Profile page**
 <img src="readme/testing/profile-page-desktop.jpg" alt="Profile page" >
 
 - **Edit profile page**
@@ -134,10 +134,10 @@ Refer to the links for the templates:
 - **Sign up page**
 <img src="readme/testing/sign-up-mobile.jpg" alt="Sign up page" >
 
-- **Artist page**
+- **Artists page**
 <img src="readme/testing//artist-page-mobile.jpg" alt="Artist page" >
 
-- **Profile page**
+- **Read Profile page**
 <img src="readme/testing/profile-page-mobile.jpg" alt="Profile page" >
 
 - **Edit profile**

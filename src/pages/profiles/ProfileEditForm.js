@@ -17,6 +17,7 @@ import {
 
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+import PropTypes from 'prop-types';
 
 const ProfileEditForm = () => {
   const currentUser = useCurrentUser();
@@ -160,6 +161,11 @@ const ProfileEditForm = () => {
       </Row>
     </Form>
   );
+};
+
+// Add PropTypes validation
+ProfileEditForm.propTypes = {
+  profile: PropTypes.object.isRequired,
 };
 
 export default ProfileEditForm;
