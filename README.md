@@ -630,6 +630,8 @@ The static files are being hosted on Cloudinary:
 The following sources and references were resorted for the creation of this website:
 
 - The lessons and tutorials provided by Code Institute, on the final module entitled "Moments" for the 'Advanced Front-End' specialization
+- The Tutor team provided by Code Institutes Student Support
+- The mentor Gareth McGirr for [react-simple-star-rating](https://react-simple-star-rating.vercel.app/?path=/story/introduction--page) and his examplar repo [body-doodles](https://github.com/Gareth-McGirr/body-doodles/tree/main).
 - This README file and some of the Code were also taken and guided by the README file from [TiagoMA90](https://github.com/TiagoMA90/connect) and my mentor Gareth McGirr exemplar repo [body-doodles-api](https://github.com/Gareth-McGirr/body-doodles).
 - [React](https://legacy.reactjs.org/docs/getting-started.html) documentation
 - [React Bootstrap](https://react-bootstrap.netlify.app/) documetation
