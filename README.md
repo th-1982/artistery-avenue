@@ -5,7 +5,7 @@ Artistry Avenue is a social media platform designed for artists and art enthusia
 It is a website where Users can share the artwork they have made, give feedback to others,  like, and connect.
 
 
-![Mockup image](readme)
+![Mockup image](readme/images/mockup-artist.jpg)
 
 
 ## Live Project
@@ -606,7 +606,6 @@ The static files are being hosted on Cloudinary:
 - [FontAwesome](https://fontawesome.com/) - Source of icons
 - [Bytes.dev](https://bytes.dev/) - Testing screen sizes
 - Chrome DevTools - Testing tool
-- [WAVE Evaluation tool](https://wave.webaim.org/) - Testing tool
 - [W3jigsaw](https://jigsaw.w3.org/css-validator/) - CSS validation tool
 - [JSHint](https://jshint.com/) - Javascript testing tool
 - [Lucidchart](https://www.lucidchart.com/) - Diagramming and visualization tool 

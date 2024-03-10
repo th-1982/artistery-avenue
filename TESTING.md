@@ -146,18 +146,6 @@ Refer to the links for the templates:
 </details>
 
 
-## Browser Compatabilty
-
-The website compatability was tested on the following browsers:
-- Google Chrome
-- Firefox
-- Microsoft Edge
-
-## Responsiveness
-
-All pages have undergone thorough testing to ensure they are responsive on various screen sizes, starting from 330px upwards.
-The design follows the WCAG 2.1 Reflow criteria for responsiveness, focusing on compatibility with Chrome, Edge, and Firefox browsers.
-
 # Validation
 ## ESlit
 To ensure code quality and adherence to coding standards, ESLint validated all pages through the deployed Heroku website URL. The validation process involved using both ESLint and the W3C Markup Validation Service (jigsaw.w3.org).
@@ -203,3 +191,33 @@ Throughout the validation process, guidance from [this tutorial](https://code.vi
 The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css-validator/)<br> At the time of deployment the validation for site has the following outcome:<br><br>
 
 <img src="readme/testing/W3Jigsaw.jpg" alt="W3 Jigsaw">
+
+
+# Bugs and Fixes
+## Bookmark
+- **Bugs:** <br>
+Bookmarking Issue: I tried to Bookmark a post, but it was not working because the id of that particular post was missing.
+Unbookmarking Issue: I tried to unbookmark a post, but it was also tricky because it would just be a bookmark, and I could not unbookmark it.
+
+- **Fixes:** <br>
+For the bookmarking Issue,  I went to the backend, added the missing id, and came to the front end, including the bookmark id, and it started working.
+To address the unbookmarking Issue, I went to the Database to delete all bookmarked posts. Before it started working, I also had to fix the id.
+
+## Sign In & Sign Up
+- **Bugs:** <br>
+I encounter this error. When I click on the "Sign In" or "Sign Up" buttons, instead of being directed to the respective login or signup pages where I can enter my username and password for authentication, I am immediately redirected to the home page. This behavior prevents me from accessing the login and signup forms and providing the necessary credentials for authentication.
+
+- **Fixes:** <br>
+To solve this Issue, I reviewed and adjusted the frontend routing and authentication logic and ensured that the "Sign In" and "Sign Up" buttons were correctly navigated to the appropriate pages for user authentication.
+
+## Browser Compatabilty
+
+The website compatability was tested on the following browsers:
+- Google Chrome
+- Firefox
+- Microsoft Edge
+
+## Responsiveness
+
+All pages have undergone thorough testing to ensure they are responsive on various screen sizes, starting from 330px upwards.
+The design follows the WCAG 2.1 Reflow criteria for responsiveness, focusing on compatibility with Chrome, Edge, and Firefox browsers.
