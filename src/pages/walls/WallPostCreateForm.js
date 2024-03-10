@@ -126,4 +126,5 @@ const WallPostCreateForm = ({ profileId, createWallPost, currentUser }) => {
   );
 };
 
+
 export default WallPostCreateForm;

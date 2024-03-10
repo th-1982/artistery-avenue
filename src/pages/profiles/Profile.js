@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import Button from "react-bootstrap/Button";
 import { useSetProfileData } from "../../contexts/ProfileDataContext";
-import PropTypes from 'prop-types';
+
 
 const Profile = (props) => {
   const { profile, mobile, imageSize = 55, showButtons = true } = props;
@@ -51,14 +51,6 @@ const Profile = (props) => {
       </div>
     </div>
   );
-};
-
-// Add PropTypes validation
-Profile.propTypes = {
-  profile: PropTypes.object.isRequired,
-  mobile: PropTypes.bool.isRequired,
-  imageSize: PropTypes.number.isRequired,
-  showButtons: PropTypes.bool.isRequired,
 };
 
 

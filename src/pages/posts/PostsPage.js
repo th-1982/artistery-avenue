@@ -19,6 +19,7 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import WallPostsList from "../../pages/walls/WallPostsList";
 import WallPostCreateForm from "../../pages/walls/WallPostCreateForm";
 
+
 function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -121,5 +122,6 @@ function PostsPage({ message, filter = "" }) {
     </Row>
   );
 }
+
 
 export default PostsPage;

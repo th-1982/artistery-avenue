@@ -4,6 +4,7 @@ import axios from "axios";
 import appStyles from "../../App.module.css";
 import Profile from "./Profile";
 
+
 // Fetch the results for all pages
 async function fetchAllPages(initialUrl) {
   let results = [];
@@ -140,5 +141,6 @@ const FollowedProfiles = ({ mobile, followedId }) => {
     </Container>
   );
 };
+
 
 export default FollowedProfiles;

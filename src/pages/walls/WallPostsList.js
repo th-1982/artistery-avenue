@@ -79,4 +79,5 @@ const WallPostsList = ({ profileId, currentUser, mobile }) => {
   );
 };
 
+
 export default WallPostsList;

@@ -19,6 +19,7 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
 import Artist from "../artists/Artist";
 
+
 const ReviewsPage = ({ message }) => {
   const [reviews, setReviews] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -87,5 +88,6 @@ const ReviewsPage = ({ message }) => {
     </Row>
   );
 };
+
 
 export default ReviewsPage;

@@ -6,6 +6,7 @@ import btnStyles from "../../styles/Button.module.css";
 import styles from "../../styles/Review.module.css";
 import wallPostStyles from "../../styles/WallPost.module.css";
 
+
 const WallPost = (props) => {
   const { id, owner, updated_at, content, currentUser, isOwner } = props;
   const [isEditing, setIsEditing] = useState(false);
@@ -103,5 +104,6 @@ const WallPost = (props) => {
     </div>
   );
 };
+
 
 export default WallPost;

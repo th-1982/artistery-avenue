@@ -96,4 +96,5 @@ const ArtistsPage = ({ message, filter = "" }) => {
   );
 };
 
+
 export default ArtistsPage;

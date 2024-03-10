@@ -96,5 +96,5 @@ const FilteredComments = ({ profileId }) => {
     );
 };
 
-
+  
 export default FilteredComments;

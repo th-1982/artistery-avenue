@@ -105,5 +105,4 @@ const TermsOfService = ({ isOpen, onRequestClose }) => {
 };
 
 
-
 export default TermsOfService;
