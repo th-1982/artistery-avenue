@@ -146,11 +146,6 @@ Refer to the links for the templates:
 </details>
 
 
-## CSS
-The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css-validator/)<br> At the time of deployment the validation for site has the following outcome:<br><br>
-
-<img src="readme/testing/W3Jigsaw.jpg" alt="W3 Jigsaw">
-
 ## Browser Compatabilty
 
 The website compatability was tested on the following browsers:
@@ -163,3 +158,48 @@ The website compatability was tested on the following browsers:
 All pages have undergone thorough testing to ensure they are responsive on various screen sizes, starting from 330px upwards.
 The design follows the WCAG 2.1 Reflow criteria for responsiveness, focusing on compatibility with Chrome, Edge, and Firefox browsers.
 
+# Validation
+## ESlit
+To ensure code quality and adherence to coding standards, ESLint validated all pages through the deployed Heroku website URL. The validation process involved using both ESLint and the W3C Markup Validation Service (jigsaw.w3.org).
+
+- **Installation**<br>
+ESLint was installed using the following commands:
+- `npm install eslint --save-dev`
+- `npx eslint --init`
+
+During the initialization process, a series of questions were presented and answered accordingly.
+
+<img src="readme/testing/ESlint-test.jpg" alt="ESlint-test">
+
+- **Initial Errors**<br>
+Upon running the command `npx eslint src --fix`,1468 problems, 438 errors and 1030 warnings were identified, primarily related to syntax and indentation issues.
+
+<img src="readme/testing/ESlint-test9.jpg" alt="ESlint-test9">
+
+- **Error Resolution** <br>
+The identified errors were systematically addressed by executing the command `npx eslint src`. This process significantly reduced the number of errors to 289.
+
+<img src="readme/testing/ESlint-test1.jpg" alt="ESlint-test1">
+
+- **Additional Refinement** <br>
+To further enhance the codebase and address any lingering issues, the command `npx eslint. '-- ignore-pattern' node_modules/'- -fix was executed. This step resolved additional errors and warnings, resulting in a more polished codebase.
+
+- **Remaining Issues** <br>
+The remaining 289 errors were associated with specific ESLint rules, including `react/prop-types`, `jsx-key`, `no-unused-vars`, and `no-undef`.
+
+- **PropTypes Integration** <br>
+PropTypes from the 'prop-types' library were imported to address these issues, and PropTypes validation was implemented in the React components.
+
+- **Final Steps** <br>
+After successful error resolution, the configuration files (`eslintrc.js` and PropTypes validations) were deleted, resulting in a codebase that adheres to established coding standards. However, 106 errors and 0 warnings persisted after the validation process was completed.
+
+<img src="readme/testing/ESlint-test8.jpg" alt="ESlint-test8">
+
+- **Reference** <br>
+Throughout the validation process, guidance from [this tutorial](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_linting) was consulted as a valuable resource for ESLint integration.
+
+
+## CSS
+The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css-validator/)<br> At the time of deployment the validation for site has the following outcome:<br><br>
+
+<img src="readme/testing/W3Jigsaw.jpg" alt="W3 Jigsaw">
