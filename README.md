@@ -622,6 +622,7 @@ The static files are being hosted on Cloudinary:
 ### Media 
 - The images on this website were taken from [pexels](https://www.pexels.com).
 - The website logo was taken from [free-artistery-avenue-logo](https://www.bing.com/search?pglt=41&q=free+artistery+avenue+logo+for+social+media+plateform&cvid=989244342f2c40288dd88319fc43288f&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTM0NDIxajBqMagCALACAA&FORM=ANNTA1&PC=EDGEDSP ). 
+- I got the mockup Generator form [Mockup-Generator](https://techsini.com/unable-to-generate-mockup-of-your-website-here-is-the-quick-fix/)
 
 
 ### Code
