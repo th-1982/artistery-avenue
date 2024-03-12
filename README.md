@@ -613,6 +613,7 @@ The static files are being hosted on Cloudinary:
 - [Gitpod](https://gitpod.io/workspaces) - Code editor
 - [ElephantSQL](https://www.elephantsql.com/) - Database
 - [Cloudinary](https://cloudinary.com/) - Static & Media host
+- [ChatGPT](https://chat.openai.com/) - To generate the content
 - [TinyPNG](https://tinypng.com/) - Image compression tool
 - [Heroku](https://id.heroku.com/login) - Cloud platform/Host the live project
 

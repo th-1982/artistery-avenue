@@ -34,7 +34,7 @@ const ArtistsPage = ({ message, filter = "" }) => {
         setArtists(data);
         setHasLoaded(true);
       } catch (err) {
-        console.log(err);
+       // console.log(err);
       }
     };
 

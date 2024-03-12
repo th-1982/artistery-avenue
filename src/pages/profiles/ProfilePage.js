@@ -43,10 +43,13 @@ function ProfilePage() {
 
   const { setProfileData, handleFollow, handleUnfollow } = useSetProfileData();
   const { pageProfile } = useProfileData();
+  // console.log(pageProfile)
 
   const [profile] = pageProfile.results;
+  // console.log(profile)
   const is_owner = currentUser?.username === profile?.owner;
   const artistId = profile?.artistId;
+  // console.log(artistId)
 
   const [show, setShow] = useState(false);
 
@@ -55,6 +58,7 @@ function ProfilePage() {
 
   const handleDeleteArtist = async () => {
     try {
+      
       await axios.delete(`/artists/${artistId}/`);
       await axios.put(`/profiles/${id}/`, { artistId: null });
       setArtistData(null);
@@ -85,7 +89,7 @@ function ProfilePage() {
         setHasLoaded(true);
       } catch (err) {
         setArtistData(null);
-        console.log(err);
+       // console.log(err);
       }
     };
     // handleMount();

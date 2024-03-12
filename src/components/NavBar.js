@@ -14,7 +14,7 @@ import { removeTokenTimestamp } from "../utils/utils";
 // Navigation Bar Component
 const NavBar = () => {
     const currentUser = useCurrentUser();
-    console.log('currentUser :', currentUser);
+   
     const setCurrentUser = useSetCurrentUser();   
 
     const { expanded, setExpanded, ref } = useClickOutsideToggle();
@@ -27,7 +27,7 @@ const NavBar = () => {
             setCurrentUser(null);
             removeTokenTimestamp();
         } catch (err) {
-            console.log(err);
+         //   console.log(err);
         }
     };
     useEffect(() => {
