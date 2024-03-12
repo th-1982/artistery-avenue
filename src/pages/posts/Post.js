@@ -12,6 +12,7 @@ import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
 
+// Post Component
 const Post = (props) => {
   const {
     id,
@@ -112,6 +113,7 @@ const Post = (props) => {
     }
   };
 
+  // Post Structure
   return (
     <Card className={styles.Post}>
       <Card.Body>

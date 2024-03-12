@@ -27,6 +27,7 @@ function PostsPage({ message, filter = "" }) {
   const [query, setQuery] = useState("");
   const currentUser = useCurrentUser();
 
+  // Function to create a wall post on the Posts Page
   const id = "id";
   const createWallPost = async (wallPostData) => {
     try {
@@ -60,6 +61,7 @@ function PostsPage({ message, filter = "" }) {
     };
   }, [filter, query, pathname, currentUser]);
 
+  // PostsPage Structure
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>

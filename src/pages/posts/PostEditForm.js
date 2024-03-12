@@ -15,6 +15,7 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
+// PostEditForm Component
 function PostEditForm() {
   const [errors, setErrors] = useState({});
 
@@ -127,7 +128,8 @@ function PostEditForm() {
       </Button>
     </div>
   );
-
+  
+  // PostEditForm Structure
   return (
     <Form onSubmit={handleSubmit}>
       <Row>

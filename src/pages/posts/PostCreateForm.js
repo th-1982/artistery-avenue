@@ -20,6 +20,7 @@ import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
 
+// PostCreateForm Component
 function PostCreateForm() {
   useRedirect("loggedOut");
   const [errors, setErrors] = useState({});
@@ -107,14 +108,15 @@ function PostCreateForm() {
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => history.goBack()}
       >
-        cancel
+        Cancel
       </Button>
       <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        create
+        Create
       </Button>
     </div>
   );
 
+  // PostCreateForm Structure
   return (
     <Form onSubmit={handleSubmit}>
       <Row>

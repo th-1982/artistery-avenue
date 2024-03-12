@@ -19,6 +19,7 @@ import { useRedirect } from "../../hooks/useRedirect";
 import { setTokenTimestamp } from "../../utils/utils";
 import Footer from "../../components/Footer";
 
+// SignInForm Component
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
   useRedirect("loggedIn");
@@ -61,7 +62,7 @@ function SignInForm() {
   }
   };
 
-
+  // SignInForm Structure
   return (
     <Row className={styles.Row}>
       <Col className="my-auto p-0 p-md-2" md={6}>

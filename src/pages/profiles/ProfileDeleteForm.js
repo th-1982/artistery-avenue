@@ -9,12 +9,14 @@ import appStyles from "../../App.module.css";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { removeTokenTimestamp } from "../../utils/utils";
 import buttonStyles from "../../styles/Button.module.css"
-import PropTypes from 'prop-types';
 
+
+// ProfileDeleteForm Component 
 const ProfileDeleteForm = ({ id }) => {
   const setCurrentUser = useSetCurrentUser();
   const history = useHistory();
 
+  // Handles the deletion for the User profile
   const handleDelete = async () => {
     try {
       await axios.delete(`/profiles/${id}/delete/`);
@@ -28,6 +30,7 @@ const ProfileDeleteForm = ({ id }) => {
     }
   };
 
+  // ProfileDeleteForm Structure
   return (
     <Container className={`${appStyles.Content} p-4 mt-2`}>
       <Row className={buttonStyles.Row}>
@@ -47,9 +50,6 @@ const ProfileDeleteForm = ({ id }) => {
   );
 };
 
-// Add PropTypes validation
-ProfileDeleteForm.propTypes = {
-  id: PropTypes.string.isRequired,
-};
+
 
 export default ProfileDeleteForm;

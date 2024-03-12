@@ -18,6 +18,7 @@ import Asset from "../../components/Asset";
 
 import { fetchMoreData } from "../../utils/utils";
 
+// PostPage Component
 function PostPage() {
   const { id } = useParams();
   const [post, setPost] = useState({ results: [] });
@@ -43,6 +44,7 @@ function PostPage() {
     handleMount();
   }, [id]);
 
+  // PostPage Structure
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>

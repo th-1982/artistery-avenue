@@ -210,10 +210,7 @@ I encounter this error. When I click on the "Sign In" or "Sign Up" buttons, inst
 - **Fixes:** <br>
 To solve this Issue, I reviewed and adjusted the frontend routing and authentication logic and ensured that the "Sign In" and "Sign Up" buttons were correctly navigated to the appropriate pages for user authentication.
 
-Some console errors are present due to the authorization calls. 
-
-<img src="readme/testing/console-401-errors.jpg" alt="Console error">
-These three 401 unauthorized errors were also present in the walkthrough from Code Institute, and I did not manage to implement a fix to prevent them from appearing on time.
+Some console errors are present due to the authorization calls. These  errors were also present in the walkthrough from Code Institute, and I did not manage to implement a fix to prevent them from appearing on time.
 
 ## Browser Compatabilty
 

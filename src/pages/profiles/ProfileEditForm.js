@@ -17,8 +17,8 @@ import {
 
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
-import PropTypes from 'prop-types';
 
+// ProfileEditForm Component
 const ProfileEditForm = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
@@ -113,7 +113,8 @@ const ProfileEditForm = () => {
       </Button>
     </>
   );
-
+  
+  // ProfileEditForm Structure
   return (
     <Form onSubmit={handleSubmit}>
       <Row>
@@ -163,9 +164,6 @@ const ProfileEditForm = () => {
   );
 };
 
-// Add PropTypes validation
-ProfileEditForm.propTypes = {
-  profile: PropTypes.object.isRequired,
-};
+
 
 export default ProfileEditForm;

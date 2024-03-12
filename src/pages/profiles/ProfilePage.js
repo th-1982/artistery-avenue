@@ -32,7 +32,7 @@ import Artist from "../artists/Artist";
 import axios from "axios";
 import { Modal } from "react-bootstrap";
 
-
+// ProfilePage Component
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
   const [profilePosts, setProfilePosts] = useState({ results: [] });
@@ -178,8 +178,7 @@ function ProfilePage() {
     </>
   );
 
-   
-
+  // ProfilePage Structure
   return (
     <Row>
       <Col className="py-2 p-0 p-lg-2" lg={8}>

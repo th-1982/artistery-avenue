@@ -14,6 +14,7 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
+// UsernameForm Component
 const UserPasswordForm = () => {
   const history = useHistory();
   const { id } = useParams();
@@ -52,6 +53,7 @@ const UserPasswordForm = () => {
     }
   };
 
+  // UsernameForm Structure
   return (
     <Row>
       <Col className="py-2 mx-auto text-center" md={6}>

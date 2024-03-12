@@ -271,7 +271,7 @@ Authenticated profile owners on Artistery Avenue enjoy comprehensive control. Th
 
 - ## ProfileDeleteForm.js (BUGGED)
 - `ProfileDeleteForm` is a component designed for eliminating user profile accounts. 
-- Upon confirmation, the component triggers an asynchronous request to delete the user's profile. The `handle delete` function, responsible for this deletion process, ensures that the user is appropriately logged out by removing the access token and updating the current user context.
+- Upon confirmation, the component triggers an asynchronous request to delete the user's profile. The `handle delete` function, responsible for this deletion process, ensures that the user is appropriately logged out by removing the access token and updating the current user context.If the user does not want to delete their account, they should click on their profile at the top right-hand side of the Navbar, which will take them back to their profile.
 - **BUGGED:** Please refer to the TESTING.md linked at the end of this README.md.
 
 <img src="readme/images/ProfileDelete.jpg" alt="Profile">
